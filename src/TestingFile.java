@@ -7,8 +7,8 @@ public class TestingFile {
         ArrayList<Ingredient> ingList = new ArrayList<>();
         ingList.add(i1);
         ingList.add(i2);
-        Recipe r1 = new Recipe(ingList, 30, true, false);
-        System.out.println("The amount of time to make sugar bread is " + r1.minutes + " minutes");
+        Recipe r1 = new Recipe("sugar bread", ingList, 30, true, false);
+        System.out.println("The amount of time to make " + r1.recipeName + " is " + r1.minutes + " minutes");
         for(int i = 0; i < 12; ++i){
             System.out.println("I AM ANIMENERD");
         }

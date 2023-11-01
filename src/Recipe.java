@@ -8,17 +8,28 @@ import java.util.List;
  */
 public class Recipe {
 
+     public String recipeName;
+     public String recipeLink;
      public List<Ingredient> ingredientList;
      public int minutes;
      public boolean glutenFree;
      public boolean nutFree;
 
-     public Recipe(List<Ingredient> ingredientList, int time, boolean hasGluten, boolean nutFree){
+     public Recipe(String recipeName, List<Ingredient> ingredientList, int time, boolean hasGluten, boolean nutFree){
+         this.recipeName = recipeName;
          this.ingredientList = ingredientList;
          minutes = time;
          glutenFree = hasGluten;
          this.nutFree = nutFree;
      }
+    public Recipe(String recipeName, List<Ingredient> ingredientList, int time, boolean hasGluten, boolean nutFree, String link){
+        this.recipeName = recipeName;
+        this.ingredientList = ingredientList;
+        minutes = time;
+        glutenFree = hasGluten;
+        this.nutFree = nutFree;
+        recipeLink = link;
+    }
 
     /**
      * @author anime
